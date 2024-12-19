@@ -50,7 +50,7 @@ steps:
       host:
         from_secret: host
       path:
-        from_secret: path
+        from_secret: path1
       user:
         from_secret: user
       actions:
