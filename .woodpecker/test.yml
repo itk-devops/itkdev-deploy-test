@@ -16,6 +16,8 @@ steps:
         from_secret: host
       path:
         from_secret: path
+      paths:
+        from_secret: paths
       user:
         from_secret: user
       keep: 4
