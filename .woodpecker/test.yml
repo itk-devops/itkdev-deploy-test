@@ -5,7 +5,7 @@ skip_clone: true
 
 steps:
   - name: Ansible playbook
-    image: itkdev/ansible-plugin:1
+    image: itkdev/ansible-plugin
     pull: true
     settings:
       id:
