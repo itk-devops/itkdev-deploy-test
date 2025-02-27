@@ -3,6 +3,10 @@ when:
 
 skip_clone: true
 
+
+labels:
+  zone: TEST
+
 steps:
   - name: Ansible playbook
     image: itkdev/ansible-plugin
@@ -15,7 +19,7 @@ steps:
       host:
         from_secret: host
       path:
-        from_secret: path1
+        from_secret: path
       user:
         from_secret: user
       keep: 4
