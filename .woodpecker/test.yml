@@ -1,0 +1,61 @@
+when:
+  - event: release
+
+skip_clone: true
+
+
+labels:
+  zone: TEST
+
+steps:
+  - name: Ansible playbook
+    image: itkdev/ansible-plugin
+    pull: true
+    settings:
+      id:
+        from_secret: id
+      secret:
+        from_secret: secret
+      host:
+        from_secret: host
+      path:
+        from_secret: path
+      user:
+        from_secret: user
+      keep: 4
+      playbook: 'release'
+      pre_up:
+        - itkdev-docker-compose-server run phpfpm bin/console cache:clear
+        - uptime
+      cron:
+        cache-clear:
+          minute: '*/10'
+          hour: '*'
+          day: '*'
+          month: '*'
+          weekday: '*'
+          job: 'itkdev-docker-compose-server exec phpfpm bin/console cache:clear'
+        cron-test:
+          minute: '*'
+          hour: '*'
+          day: '*'
+          month: '*'
+          weekday: '*'
+          job: 'itkdev-docker-compose-server exec phpfpm bin/console app:cron'
+
+  - name: Run post deploy
+    image: itkdev/ansible-plugin:1
+    pull: true
+    settings:
+      id:
+        from_secret: id
+      secret:
+        from_secret: secret
+      host:
+        from_secret: host
+      path:
+        from_secret: path1
+      user:
+        from_secret: user
+      actions:
+        - itkdev-docker-compose-server exec phpfpm bin/console cache:clear
