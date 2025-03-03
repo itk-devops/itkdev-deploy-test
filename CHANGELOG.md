@@ -1,5 +1,8 @@
 ## Changelog
 
+## 0.1.12
+- Test release
+
 ## 0.1.11
 - Fix path
 
