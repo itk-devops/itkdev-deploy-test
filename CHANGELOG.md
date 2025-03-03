@@ -1,15 +1,18 @@
 ## Changelog
 
-## 0.1.8
+## 0.1.11
+- Fix path
 
+## 0.1.10
+- Test release
+
+## 0.1.9
 - Test release
 
 ## 0.1.8
-
 - Test release
 
 ## 0.1.7
-
 - Test release
 
 ## 0.1.6
