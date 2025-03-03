@@ -53,7 +53,7 @@ steps:
       host:
         from_secret: host
       path:
-        from_secret: path1
+        from_secret: path
       user:
         from_secret: user
       actions:
