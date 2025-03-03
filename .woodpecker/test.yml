@@ -3,7 +3,6 @@ when:
 
 skip_clone: true
 
-
 labels:
   zone: TEST
 
