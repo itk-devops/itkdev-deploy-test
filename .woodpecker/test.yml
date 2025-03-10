@@ -4,7 +4,8 @@ when:
 skip_clone: true
 
 labels:
-  zone: TEST
+  zone:
+    from_secret: zone
 
 steps:
   - name: Ansible playbook
