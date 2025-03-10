@@ -1,6 +1,9 @@
 ## Changelog
 
 ## 0.1.18
+- Test using "from_secret" in labels
+
+## 0.1.18
 - Test release
 
 ## 0.1.17
