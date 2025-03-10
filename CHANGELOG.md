@@ -1,6 +1,9 @@
 ## Changelog
 
-## 0.1.18
+## 0.1.20
+- Undo "using "from_secret" in labels"
+
+## 0.1.19
 - Test using "from_secret" in labels
 
 ## 0.1.18
