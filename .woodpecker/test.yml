@@ -27,8 +27,9 @@ steps:
         - itkdev-docker-compose-server run phpfpm bin/console cache:clear
         - uptime
         - echo ${PWD}
-        - echo ${user}
-        - "echo $${user}"
+        - echo $${PWD}
+        - "echo $${pwd}"
+        - 'echo $${pwd}'
         - "echo fisk"
         - echo hest
       cron:
