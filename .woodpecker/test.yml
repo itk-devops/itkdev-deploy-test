@@ -26,12 +26,6 @@ steps:
       pre_up:
         - itkdev-docker-compose-server run phpfpm bin/console cache:clear
         - uptime
-        - echo ${PWD}
-        - echo $${PWD}
-        - "echo $${pwd}"
-        - 'echo $${pwd}'
-        - "echo fisk"
-        - ${CI_WORKFLOW_NAME}
       cron:
         cache-clear:
           minute: '*/10'
