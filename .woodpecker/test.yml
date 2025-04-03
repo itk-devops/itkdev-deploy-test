@@ -31,7 +31,7 @@ steps:
         - "echo $${pwd}"
         - 'echo $${pwd}'
         - "echo fisk"
-        - echo hest
+        - ${CI_WORKFLOW_NAME}
       cron:
         cache-clear:
           minute: '*/10'
