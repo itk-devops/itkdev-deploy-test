@@ -22,7 +22,7 @@ services:
       - COMPOSER_VERSION=2
     volumes:
       - .:/app
-      - ../shared/.env.local:/app/.env.local
+      - ../../shared/.env.local:/app/.env.local
 
   nginx:
     image: nginxinc/nginx-unprivileged:alpine
