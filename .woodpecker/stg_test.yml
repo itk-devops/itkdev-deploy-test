@@ -18,7 +18,7 @@ steps:
       host:
         from_secret: host
       path:
-        from_secret: path
+        from_secret: path_1
       user:
         from_secret: user
       keep: 4
@@ -53,7 +53,7 @@ steps:
       host:
         from_secret: host
       path:
-        from_secret: path
+        from_secret: path_1
       user:
         from_secret: user
       actions:
