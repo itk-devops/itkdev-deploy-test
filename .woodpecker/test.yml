@@ -28,7 +28,7 @@ steps:
         - uptime
         - echo ${PWD}
         - echo ${user}
-        - "echo ${user}"
+        - "echo $${user}"
         - "echo fisk"
         - echo hest
       cron:
