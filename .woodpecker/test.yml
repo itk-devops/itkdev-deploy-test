@@ -28,6 +28,9 @@ steps:
         - uptime
         - echo ${PWD}
         - echo ${user}
+        - "echo ${user}"
+        - "echo fisk"
+        - echo hest
       cron:
         cache-clear:
           minute: '*/10'
