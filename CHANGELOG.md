@@ -1,5 +1,8 @@
 ## Changelog
 
+## Unreleased
+- Use maintained nginx/nginx-unprivileged image
+
 ## 0.1.20
 - Undo "using "from_secret" in labels"
 
